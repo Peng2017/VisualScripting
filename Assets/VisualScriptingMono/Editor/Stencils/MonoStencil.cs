@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Threading;
 using UnityEditor.Compilation;
 using UnityEditor.VisualScripting.Editor;
@@ -14,6 +15,7 @@ namespace UnityEditor.VisualScripting.Model.Stencils
 {
     public class MonoStencil : ClassStencil
     {
+        public override IBuilder Builder => MonoBuilder.Instance;
 
         [MenuItem("Assets/Create/Visual Script/Mono Graph")]
         public static void CreateEcsGraph() {
@@ -27,9 +29,13 @@ namespace UnityEditor.VisualScripting.Model.Stencils
         public override Type GetBaseClass() {
             return typeof(MonoBehaviour);
         }
+        public override string GetSourceFilePath(VSGraphModel graphModel) {
+            return Path.Combine(ModelUtility.GetAssemblyOutputDirectory(), graphModel.TypeName + ".cs");
+        }
     }
     public class MonoBuilder : IBuilder
     {
+        public static IBuilder Instance = new MonoBuilder();
         public void Build(IEnumerable<GraphAssetModel> vsGraphAssetModels, Action<string, CompilerMessage[]> roslynCompilationOnBuildFinished) {
             VseUtility.RemoveLogEntries();
             CancellationToken token = CancellationToken.None;

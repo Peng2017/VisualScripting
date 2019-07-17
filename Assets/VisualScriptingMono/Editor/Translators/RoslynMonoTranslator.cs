@@ -52,11 +52,16 @@ namespace UnityEditor.VisualScripting.Model.Compilation
                 field.SetValue(instance, value);
             }
         }
+
         public RoslynMonoTranslator(Stencil stencil) : base(stencil) {
  
         }
 
         protected override Microsoft.CodeAnalysis.SyntaxTree ToSyntaxTree(VSGraphModel graphModel, UnityEngine.VisualScripting.CompilationOptions options) {
+            return GenerateStandardSyntaxTree(graphModel, options);
+        }
+
+        private Microsoft.CodeAnalysis.SyntaxTree GenerateStandardSyntaxTree(VSGraphModel graphModel, UnityEngine.VisualScripting.CompilationOptions options) {
             //TODO fix graph name, do not use the asset name
             var className = graphModel.TypeName;
             var baseClass = graphModel.Stencil.GetBaseClass().Name;
