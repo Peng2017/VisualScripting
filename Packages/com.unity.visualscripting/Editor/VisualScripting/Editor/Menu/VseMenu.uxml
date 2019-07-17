@@ -1,0 +1,77 @@
+<UXML xmlns:ui="UnityEngine.UIElements" xmlns:vs="UnityEditor.VisualScripting.Editor" xmlns:vsui="UnityEditor.UIElements" xmlns:vsuiec="UnityEditor.EditorCommon.UIElements">
+    <ui:VisualElement name="saveAllButton" class="menuButton">
+        <ui:VisualElement name="saveAllButtonIcon"></ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="buildAllButton" class="menuButton">
+        <ui:VisualElement name="buildAllButtonIcon"></ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="viewInCodeViewerButton" class="menuButton">
+        <ui:VisualElement name="viewInCodeViewerButtonIcon"></ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="resetBlackboardButton" class="menuButton">
+        <ui:VisualElement name="resetBlackboardButtonIcon"></ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="refreshButton" class="menuButton">
+        <ui:VisualElement name="refreshButtonIcon"></ui:VisualElement>
+    </ui:VisualElement>
+
+    <ui:VisualElement class="menuSeparator"/>
+
+    <ui:VisualElement name="errorIconLabel" class="menuItem">
+        <ui:VisualElement name="errorIconLabelIcon"></ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="errorCounterContainer" class="menuItem">
+        <ui:Label name="errorCounterLabel"></ui:Label>
+    </ui:VisualElement>
+    <ui:VisualElement name="previousErrorButton" class="menuButton">
+        <ui:VisualElement name="previousErrorButtonIcon"></ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="nextErrorButton" class="menuButton">
+        <ui:VisualElement name="nextErrorButtonIcon"></ui:VisualElement>
+    </ui:VisualElement>
+
+    <ui:VisualElement class="menuSeparator"/>
+
+    <ui:VisualElement name="breadcrumbButton" class="menuItem">
+        <ui:VisualElement name="breadcrumbButtonIcon"></ui:VisualElement>
+        <ui:VisualElement name="breadcrumbPopupIcon"></ui:VisualElement>
+    </ui:VisualElement>
+
+    <vsuiec:Breadcrumb name="breadcrumb"></vsuiec:Breadcrumb>
+
+    <ui:VisualElement class="menuSeparator"/>
+
+<!--    TODO: Reenable tracing menu once we support it in dots -->
+<!--    <vsui:ToolbarToggle name="enableTracingButton">-->
+<!--        <ui:VisualElement name="toggleTracingButtonIcon" class="toolbarToggleButton"/>-->
+<!--    </vsui:ToolbarToggle>-->
+<!--    <ui:VisualElement name="firstFrameTracingButton" class="menuButton">-->
+<!--        <ui:VisualElement name="firstFrameTracingButtonIcon"></ui:VisualElement>-->
+<!--    </ui:VisualElement>-->
+<!--    <ui:VisualElement name="previousFrameTracingButton" class="menuButton">-->
+<!--        <ui:VisualElement name="previousFrameTracingButtonIcon"></ui:VisualElement>-->
+<!--    </ui:VisualElement>-->
+<!--    <ui:VisualElement name="previousStepTracingButton" class="menuButton">-->
+<!--        <ui:VisualElement name="previousStepTracingButtonIcon"></ui:VisualElement>-->
+<!--    </ui:VisualElement>-->
+<!--    <ui:VisualElement name="frameCounterContainer" class="menuItem">-->
+<!--        <ui:TextField name="currentFrameTextField"></ui:TextField>-->
+<!--        <ui:Label name="totalFrameLabel"></ui:Label>-->
+<!--    </ui:VisualElement>-->
+<!--    <ui:VisualElement name="nextStepTracingButton" class="menuButton">-->
+<!--        <ui:VisualElement name="nextStepTracingButtonIcon"></ui:VisualElement>-->
+<!--    </ui:VisualElement>-->
+<!--    <ui:VisualElement name="nextFrameTracingButton" class="menuButton">-->
+<!--        <ui:VisualElement name="nextFrameTracingButtonIcon"></ui:VisualElement>-->
+<!--    </ui:VisualElement>-->
+<!--    <ui:VisualElement name="lastFrameTracingButton" class="menuButton">-->
+<!--        <ui:VisualElement name="lastFrameTracingButtonIcon"></ui:VisualElement>-->
+<!--    </ui:VisualElement>-->
+
+    <ui:VisualElement class="menuFiller"/>
+
+    <ui:VisualElement name="optionsButton" class="menuButton">
+        <ui:VisualElement name="optionsButtonIcon"></ui:VisualElement>
+    </ui:VisualElement>
+
+</UXML>

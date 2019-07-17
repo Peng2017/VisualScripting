@@ -1,0 +1,21 @@
+Scope .mainContainer {
+    border-color: #191919;
+    border-left-width: 1px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-radius: 8px;
+}
+
+Scope #GroupNodeDropAreaName {
+    background-color: #1B1B1B;
+    border-left-width: 0;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+}
+
+Scope #header {
+    height: 0;
+    padding: 0;
+}

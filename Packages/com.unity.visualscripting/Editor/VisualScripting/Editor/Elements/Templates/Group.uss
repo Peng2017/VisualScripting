@@ -1,0 +1,3 @@
+VseGraphView .group > .mainContainer > #headerContainer > #titleContainer > #titleField {
+    height: 28px;
+}

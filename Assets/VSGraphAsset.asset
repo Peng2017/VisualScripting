@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-893172837377129646
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Update
+  m_EditorClassIdentifier: VisualScripting.Mono.Editor:UnityEditor.VisualScripting.Model.Stencils:UpdateNodeModel
+  m_GraphModel: {fileID: -541261999739778355}
+  m_ParentStackModel: {fileID: 0}
+  m_GroupNodeModel: {fileID: 0}
+  m_Position: {x: 112.8375, y: 609.1496}
+  m_Color: {r: 0.776, g: 0.443, b: 0, a: 0.5}
+  m_HasUserColor: 0
+  m_InputConstants: []
+  m_NodeModels: []
+  m_FunctionVariableModels: []
+  m_FunctionParameterModels: []
+  m_ReturnType:
+    GraphModelReference: {fileID: 0}
+    Identification: System.Void, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  m_EnableProfiling: 0
+  m_EventType:
+    GraphModelReference: {fileID: 0}
+    Identification: 
+--- !u!114 &-541261999739778355
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efab17666f4b4d27811e48ebcdc091ce, type: 3}
+  m_Name: VSGraphAsset
+  m_EditorClassIdentifier: 
+  m_AssetModel: {fileID: 11400000}
+  m_NodeModels:
+  - {fileID: -893172837377129646}
+  m_EdgeModels: []
+  m_StickyNoteModels: []
+  m_Stencil: {fileID: 7262139977543000860}
+  m_GraphVariableModels: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a8c6a6630b8450e9da0c1de53f00e05, type: 3}
+  m_Name: VSGraphAsset
+  m_EditorClassIdentifier: 
+  m_GraphModel: {fileID: -541261999739778355}
+--- !u!114 &524033669021515079
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0382fc76111de4ba03f7791ff4d108, type: 3}
+  m_Name: On Update
+  m_EditorClassIdentifier: 
+  m_GraphModel: {fileID: -541261999739778355}
+  m_ParentStackModel: {fileID: 0}
+  m_GroupNodeModel: {fileID: 0}
+  m_Position: {x: -2.271347, y: 634.2579}
+  m_Color:
+    r: 0.776
+    g: 0.443
+    b: 0
+    a: 0.5
+  m_HasUserColor: 0
+  m_InputConstants: []
+  <OriginalInstanceID>k__BackingField: -2924
+  m_NextInputIndex: 0
+  m_NextOutputIndex: 1
+  m_NodeModels: []
+  m_FunctionVariableModels: []
+  m_FunctionParameterModels: []
+  m_ReturnType: {GraphModelReference: {fileID: 0}, Identification: System.Void, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089}
+  m_EnableProfiling: 0
+  m_EventType: {GraphModelReference: {fileID: 0}, Identification: }
+--- !u!114 &7262139977543000860
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 924bd64163938b64b8a146d01076ffff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  addCreateAssetMenuAttribute: 0
+  fileName: 
+  menuName: 

@@ -1,0 +1,41 @@
+.breadcrumb {
+    height: 18px;
+    flex-direction: row;
+    background-image: resource("toolbar");
+}
+
+.breadcrumb .breadcrumbItem {
+    height: 18px;
+    padding-left: 20px;
+    padding-right: 15px;
+    -unity-slice-left: 10;
+    -unity-slice-right: 10;
+    -unity-slice-top: 1;
+    -unity-slice-bottom: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: resource("breadcrump mid");
+}
+
+.breadcrumb .breadcrumbItem.breadcrumbButton:active {
+    background-image: resource("breadcrump mid act");
+}
+
+.breadcrumb .breadcrumbItem.breadcrumbButton.first:active {
+    background-image: resource("breadcrump left act");
+}
+
+.breadcrumb .breadcrumbItem.first {
+    -unity-slice-left: 1;
+    left: 0;
+    padding-left: 10px;
+    background-image: resource("breadcrump left");
+}
+
+.breadcrumb .breadcrumbItem #breadcrumbLabel {
+    height: 15px;
+    margin-bottom: 3px;
+    color: #B4B4B4;
+    -unity-text-align: middle-center;
+}

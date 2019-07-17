@@ -1,0 +1,218 @@
+#vseMenu {
+    height: 18px;
+    flex-direction: row;
+    align-items: stretch;
+    background-image: resource("toolbar");
+}
+
+#vseMenu .menuButton {
+    height: 18px;
+    width: 36px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    -unity-slice-left: 1;
+    -unity-slice-right: 1;
+    -unity-slice-top: 1;
+    -unity-slice-bottom: 1;
+}
+
+#vseMenu .menuButton,
+#vseMenu .unity-toolbar-toggle .unity-base-field__input {
+    background-image: resource("toolbar button");
+}
+
+#vseMenu .unity-toolbar-toggle {
+    width: 36px;
+    height: 18px;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0;
+}
+
+#vseMenu .unity-toolbar-toggle .unity-base-field__input {
+    height: 18px;
+}
+
+#vseMenu .menuButton:active, .menuButton:checked,
+#vseMenu .unity-toolbar-toggle:hover:active .unity-base-field__input,
+#vseMenu .unity-toolbar-toggle:hover:active:checked .unity-base-field__input,
+#vseMenu .unity-toolbar-toggle:active .unity-base-field__input,
+#vseMenu .unity-toolbar-toggle:checked .unity-base-field__input {
+    background-image: resource("toolbar button act");
+}
+
+#vseMenu .toolbarToggleButton {
+    position: absolute;
+}
+
+#vseMenu .menuSeparator {
+    width: 5px;
+    height: 18px;
+    -unity-slice-left: 1;
+    -unity-slice-right: 1;
+    -unity-slice-top: 1;
+    -unity-slice-bottom: 1;
+    background-image: resource("toolbar button");
+}
+
+#vseMenu .menuItem {
+    height: 18px;
+    min-width: 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#vseMenu .menuFiller {
+    flex: 1;
+}
+
+#vseMenu #saveAllButtonIcon {
+    background-image: resource("SaveActive");
+    width: 16px;
+    height: 16px;
+}
+
+#vseMenu #buildAllButtonIcon {
+    background-image: resource("Images/BuildAll");
+    width: 14px;
+    height: 12px;
+}
+
+#vseMenu #viewInCodeViewerButtonIcon {
+    background-image: resource("Images/CodeViewer");
+    width: 14px;
+    height: 12px;
+}
+
+#vseMenu #refreshButtonIcon {
+    background-image: resource("Images/Refresh");
+    width: 16px;
+    height: 16px;
+}
+
+#vseMenu #toggleTracingButtonIcon {
+    background-image: resource("Profiler.Record");
+    width: 16px;
+    height: 16px;
+}
+
+#vseMenu #resetBlackboardButtonIcon {
+    background-image: resource("Images/Blackboard");
+    width: 14px;
+    height: 12px;
+}
+
+#vseMenu #optionsButtonIcon {
+    background-image: resource("Images/Options");
+    width: 15px;
+    height: 14px;
+}
+
+#vseMenu #errorIconLabelIcon {
+    background-image: resource("Images/ErrorIcon");
+    width: 12px;
+    height: 12px;
+}
+
+#vseMenu #previousErrorButton {
+    width: 14px;
+}
+
+#vseMenu #previousErrorButtonIcon {
+    background-image: resource("Images/PreviousError");
+    width: 7px;
+    height: 12px;
+}
+
+#vseMenu #errorCounterLabel {
+    height: 15px;
+    min-width: 10px;
+    padding-left: 3px;
+    padding-right: 3px;
+    color: #B4B4B4;
+    -unity-text-align: middle-center;
+}
+
+#vseMenu #nextErrorButton {
+    width: 14px;
+}
+
+#vseMenu #nextErrorButtonIcon {
+    background-image: resource("Images/NextError");
+    width: 7px;
+    height: 12px;
+}
+
+#vseMenu #breadcrumbButton {
+    width: 36px;
+}
+
+#vseMenu #breadcrumbButtonIcon {
+    background-image: resource("Images/ScriptSelector");
+    width: 14px;
+    height: 12px;
+}
+
+#vseMenu #breadcrumbPopupIcon {
+    background-image: resource("IN pulldown");
+    width: 8px;
+    height: 13px;
+}
+
+#vseMenu #firstFrameTracingButtonIcon {
+    background-image: resource("d_beginButton");
+    width: 16px;
+    height: 16px;
+}
+
+#vseMenu #previousFrameTracingButtonIcon {
+    background-image: resource("d_Animation.PrevKey");
+    width: 16px;
+    height: 16px;
+}
+
+#vseMenu #previousStepTracingButtonIcon {
+    background-image: resource("d_back");
+    width: 12px;
+    height: 12px;
+}
+
+#vseMenu #lastFrameTracingButtonIcon {
+    background-image: resource("d_endButton");
+    width: 16px;
+    height: 16px;
+}
+
+#vseMenu #nextFrameTracingButtonIcon {
+    background-image: resource("d_Animation.NextKey");
+    width: 16px;
+    height: 16px;
+}
+
+#vseMenu #nextStepTracingButtonIcon {
+    background-image: resource("d_forward");
+    width: 12px;
+    height: 12px;
+}
+
+#vseMenu .frameCounterLabel {
+    height: 15px;
+    min-width: 20px;
+    padding-left: 3px;
+    padding-right: 3px;
+    color: #B4B4B4;
+    -unity-text-align: middle-center;
+}
+
+#vseMenu #totalFrameLabel {
+    min-height: 15px;
+    margin-left: 0;
+    padding-bottom: 0;
+    -unity-text-align: middle-center;
+}
+
+#vseMenu #currentFrameTextField {
+    margin-right: 0;
+}

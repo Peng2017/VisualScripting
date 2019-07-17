@@ -1,0 +1,299 @@
+#graphContainer {
+    flex: 1;
+}
+
+VseGraphView {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    min-width: 300px;
+    min-height: 300px;
+}
+
+VseGraphView GridBackground {
+    --grid-background-color: #202020;
+}
+
+VseGraphView #contentViewContainer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+VseBlankPage {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #282828;
+    justify-content: center;
+    align-items: center;
+}
+
+VseBlankPage * {
+    color: #B4B4B4;
+}
+
+VseBlankPage Label {
+    font-size: 16px;
+}
+
+VseBlankPage Button {
+    font-size: 12px;
+}
+
+#buttonBar {
+    position: absolute;
+    flex-direction: column;
+    width: 150px;
+    right: 0;
+    top: 18px;
+    background-color: #545454;
+}
+
+VseGraphView Button#collapseButton {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+/* Edges */
+
+VseGraphView .edge.execution {
+    --edge-width: 4;
+}
+
+VseGraphView .edge.execution:hover {
+    --edge-width: 6;
+}
+
+VseGraphView .edge.loop {
+    --edge-width: 4;
+}
+
+VseGraphView .edge.loop:hover {
+    --edge-width: 6;
+}
+
+VseGraphView .edge.event {
+    --edge-color: #27FFA0;
+    --ghost-edge-color: #13794C;
+}
+
+.token-node.constant > * > * > #node-border,
+.token-node.constant > * > * > #selection-border {
+    padding-left: 18px;
+    border-radius: 4px;
+}
+
+.token-node.constant > .pill > * > #node-border > #contents > #top {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.token-node.constant > .pill > * > #node-border > #contents > #top > .unity-label {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.token-node.constant EnumField {
+    padding-right: 15px;
+}
+
+.token-node.read-only > Pill.pill > TemplateContainer > #node-border,
+.token-node.read-only > Pill.pill > TemplateContainer > #selection-border,
+.token-node.write-only > Pill.pill > TemplateContainer > #node-border,
+.token-node.write-only > Pill.pill > TemplateContainer > #selection-border {
+    margin: 2px 3px 0;
+    padding: 1px 4px;
+    border-radius: 5px;
+}
+
+.token-node.read-only > Pill.pill > TemplateContainer > #node-border > #contents > #top > .unity-label,
+.token-node.write-only > Pill.pill > TemplateContainer > #node-border > #contents > #top > .unity-label {
+    margin: 0 2px;
+    padding: 2px 2px 4px;
+}
+
+.token-node.read-only > Pill.pill > TemplateContainer > #node-border > #contents > #top > #output,
+.token-node.write-only > Pill.pill > TemplateContainer > #node-border > #contents > #top > #output,
+.token-node.read-only > Pill.pill > TemplateContainer > #selection-border > #contents > #top > #output,
+.token-node.write-only > Pill.pill > TemplateContainer > #selection-border > #contents > #top > #output {
+    padding-right: 4px;
+}
+
+.port.instance {
+    align-self: center;
+}
+
+.port.instance > #type {
+    font-size: 12px;
+}
+
+.port.loop {
+    align-self: center;
+}
+
+.port.loop > #type {
+    font-size: 12px;
+}
+
+VseGraphView .token-node.trace-highlight > * > * > #node-border {
+    border-color: #b4ff69;
+}
+
+VseGraphView .node.trace-highlight > #node-border {
+    border-color: #b4ff69;
+}
+
+VseGraphView .token-node.trace-secondary-highlight > * > * > #node-border {
+    border-color: #a4ffff;
+}
+
+VseGraphView .node.trace-secondary-highlight > #node-border {
+    border-color: #a4ffff;
+}
+
+VseGraphView .token-node.exception-highlight > * > * > #node-border {
+    border-color: #ff0000;
+}
+
+VseGraphView .node.exception-highlight > #node-border {
+    border-color: #ff0000;
+}
+
+.token-node > #titleEditor {
+    -unity-text-align: middle-center;
+    font-size: 12px;
+    opacity: 1;
+    margin-top: 2px;
+}
+
+.token-node.read-only > #titleEditor,
+.token-node.write-only > #titleEditor {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+VseGraphView #node-border .port #type {
+    overflow: visible;
+}
+
+.highLevelNode .node-controls Button {
+    padding-top: 0;
+}
+
+.highLevelNode .node-controls EnumField {
+    padding-right: 16px;
+    margin: 0;
+}
+
+.highLevelNode .node-controls {
+    background-color: rgba(0, 0, 0, 0);
+    margin: 4px;
+}
+
+.highLevelNode .node-controls-container {
+    flex-direction: row;
+}
+
+.highLevelNode .node-controls-container Label {
+    width: 60px;
+    margin: 0;
+    padding: 0;
+    -unity-text-align: upper-left;
+}
+
+.highLevelNode .node-controls-control {
+    min-width: 130px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.highLevelNode .node-controls-control {
+    -unity-text-align: upper-left;
+}
+
+.highLevelNode #contents #top {
+    background-color: rgba(46, 46, 46, 0.8);
+}
+
+.highLevelNode #contents #top #output {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    background-color: rgba(0,0,0,0);
+}
+
+.highLevelNode .node-controls .port.output {
+    padding-left: 0;
+}
+
+.highLevelNode .node-controls .port.output #type {
+    /*This is commented for now to allow port names displayed in case of multiple outputs
+      e.g. The HighLevelNode GetInput.
+    width: 0;
+    margin-left: 0;*/
+}
+
+.valueBadge {
+    position: absolute;
+    height: 19px;
+    background-color : #000;
+    border-color: #F0F0F0;
+    border-left-width: 2px;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-radius: 0;
+}
+
+.valueBadge > Label#desc {
+    font-size: 11px;
+    white-space: normal;
+    color : #F0F0F0;
+    background-color : #303030;
+    border-radius: 2px;
+    max-width : 250px;
+    min-width : 24px;
+    min-height : 16px;
+    padding: 2px 4px;
+    margin: 0;
+}
+
+.valueBadge > Image {
+    position: absolute;
+    --unity-image: resource("GraphView/Badge/CommentMark.png");
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 1px;
+    border-left-width: 0;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+}
+
+.valueBadge > #tip {
+    width: 7px;
+    height: 4px;
+    margin: 0;
+    padding: 0;
+    border-left-width: 0;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    top: -4px;
+    left: 2px;
+    background-image: resource("GraphView/Badge/CommentTip.png");
+}
